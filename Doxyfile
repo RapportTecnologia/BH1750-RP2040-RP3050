@@ -1,0 +1,64 @@
+# Doxygen configuration for BH1750-RP2040-RP3050
+PROJECT_NAME           = "-RP2040/RP3050 BH1750"
+OUTPUT_DIRECTORY       = docs
+CREATE_SUBDIRS         = NO
+
+OUTPUT_LANGUAGE        = Portuguese
+
+
+# Build
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+GENERATE_XML           = NO
+RECURSIVE              = YES
+
+OPTIMIZE_OUTPUT_FOR_C  = YES
+
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = NO
+EXTRACT_STATIC         = NO
+EXTRACT_LOCAL_CLASSES  = YES
+JAVADOC_AUTOBRIEF      = YES
+QT_AUTOBRIEF           = YES
+WARN_IF_UNDOCUMENTED   = NO
+WARN_AS_ERROR          = NO
+QUIET                  = NO
+INPUT                  = .
+FILE_PATTERNS          = *.h *.c *.hpp *.cpp
+RECURSIVE              = YES
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+GENERATE_TREEVIEW      = YES
+FULL_PATH_NAMES        = NO
+STRIP_FROM_PATH        = .
+QUIET                  = YES
+WARN_IF_UNDOCUMENTED   = NO
+
+USE_MDFILE_AS_MAINPAGE = README.md
+INPUT_ENCODING         = UTF-8
+
+# Paths and filtering
+STRIP_FROM_PATH        = .
+FULL_PATH_NAMES        = NO
+
+# HTML
+GENERATE_TREEVIEW      = YES
+DISABLE_INDEX          = NO
+REFERENCED_BY_RELATION = YES
+REFERENCES_RELATION    = YES
+HTML_COLORSTYLE        = LIGHT
+
+# Dot graphs
+HAVE_DOT               = YES
+DOT_IMAGE_FORMAT       = svg
+CALL_GRAPH             = NO
+CALLER_GRAPH           = NO
+CLASS_GRAPH            = YES
+COLLABORATION_GRAPH    = YES
+UML_LOOK               = YES
+
+# Misc
+SORT_MEMBER_DOCS       = YES
+SORT_BRIEF_DOCS        = YES
+ALPHABETICAL_INDEX     = YES
+TAB_SIZE               = 4
