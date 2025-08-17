@@ -38,7 +38,7 @@ pico_sdk_init()
 add_executable(bh1750
         main.cpp
         BH1750/bh1750.cpp
-        ../I2C-RP2040-RP2350/I2C.cpp
+        ../I2C-proxy-RP2040-RP2350/I2C.cpp
         )
 
 pico_set_program_name(bh1750 "bh1750")
@@ -56,7 +56,7 @@ target_link_libraries(bh1750
 target_include_directories(bh1750 PRIVATE
         ${CMAKE_CURRENT_LIST_DIR}
         ${CMAKE_CURRENT_LIST_DIR}/BH1750
-        ${CMAKE_CURRENT_LIST_DIR}/../I2C-RP2040-RP2350
+        ${CMAKE_CURRENT_LIST_DIR}/../I2C-proxy-RP2040-RP2350
 )
 
 # Add any user requested libraries
